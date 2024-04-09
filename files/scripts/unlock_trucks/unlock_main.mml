@@ -1,0 +1,52 @@
+preset unlock(name) {
+  file 'classes/trucks/{name}' {
+    change 'Truck/GameData' {
+      set Country = ''
+      set UnlockByExploration = false
+      set UnlockByRank = 1
+    }
+  }
+}
+
+use unlock('ank_mk38')
+use unlock('azov_4220_antarctic')
+use unlock('azov_5319')
+use unlock('azov_64131')
+use unlock('azov_73210')
+use unlock('cat_745c')
+use unlock('cat_ct680')
+use unlock('chevrolet_ck1500')
+use unlock('chevrolet_kodiakc70')
+use unlock('dan_96320')
+use unlock('don_71')
+use unlock('derry_longhorn_3194')
+use unlock('derry_longhorn_4520')
+use unlock('ford_clt9000')
+use unlock('freightliner_114sd')
+use unlock('freightliner_m916a1')
+use unlock('gmc_9500')
+use unlock('hummer_h2')
+use unlock('international_fleetstar_f2070a')
+use unlock('international_loadstar_1700')
+use unlock('international_paystar_5070')
+use unlock('international_scout_800')
+use unlock('international_transtar_4070a')
+use unlock('khan_39_marshall')
+use unlock('khan_lo4f')
+use unlock('kolob_74760')
+use unlock('kolob_74941')
+use unlock('navistar_5000mv')
+use unlock('pacific_p12w')
+use unlock('pacific_p16')
+use unlock('royal_bm17')
+use unlock('step_310e')
+use unlock('tayga_6436')
+use unlock('tuz_166')
+use unlock('tuz_420_tatarin')
+use unlock('voron_ae4380')
+use unlock('voron_d53233')
+use unlock('voron_grad')
+use unlock('ws_4964_white')
+use unlock('ws_6900xd_twin')
+use unlock('yar_87')
+use unlock('zikz_5368')

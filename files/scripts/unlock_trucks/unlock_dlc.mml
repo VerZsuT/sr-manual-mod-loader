@@ -1,0 +1,58 @@
+preset unlock(dlc_name, file_name) {
+  file '_dlc/{dlc_name}/classes/trucks/{file_name}' {
+    change 'Truck/GameData' {
+      set Country = ''
+      set UnlockByExploration = false
+      set UnlockByRank = 1
+    }
+  }
+}
+
+use unlock('dlc_1_1', 'ford_f750')
+use unlock('dlc_1_1', 'tuz_16_actaeon')
+use unlock('dlc_1_2', 'chevy_apache')
+use unlock('dlc_1_2', 'tuz_108_warthog')
+use unlock('dlc_2_1', 'cat_770g')
+use unlock('dlc_2_1', 'cat_th357')
+use unlock('dlc_2_1', 'western_star_49x')
+use unlock('dlc_2_2', 'krs_58_bandit')
+use unlock('dlc_3', 'boar_45318')
+use unlock('dlc_3', 'pacific_p512')
+use unlock('dlc_3', 'paystar_5600ts')
+use unlock('dlc_4', 'khan_317_sentinel')
+use unlock('dlc_4', 'tatra_805')
+use unlock('dlc_4', 'tatra_t813')
+use unlock('dlc_4', 'zikz_605r')
+use unlock('dlc_4_1', 'cat_ct681')
+use unlock('dlc_4_1', 'international_hx_520')
+use unlock('dlc_5', 'jeep_cj7_renegade')
+use unlock('dlc_5', 'jeep_wrangler')
+use unlock('dlc_5', 'tatra_force_t815_7')
+use unlock('dlc_5', 'tatra_phoenix')
+use unlock('dlc_6', 'ank_mk38_ht')
+use unlock('dlc_6', 'aramatsu_forester')
+use unlock('dlc_6', 'land_rover_defender_90')
+use unlock('dlc_6', 'land_rover_defender_110')
+use unlock('dlc_6', 'step_3364_crocodile')
+use unlock('dlc_6', 'tayga_6455b')
+use unlock('DLC_trial_6', 'gmc_8000')
+use unlock('dlc_7', 'azov_43_191_sprinter')
+use unlock('dlc_7', 'gor_by4')
+use unlock('dlc_7', 'western_star_57x')
+use unlock('dlc_8', 'kirovets_k7m')
+use unlock('dlc_8', 'kirovets_k700')
+use unlock('dlc_8', 'rezvani_hercules_6x6')
+use unlock('dlc_8', 'step_39331_pike')
+use unlock('dlc_8', 'western_star_nf1424')
+use unlock('dlc_8', 'western_star_nf1430')
+use unlock('dlc_9', 'derry_special_15c177')
+use unlock('dlc_9', 'zikz_566a')
+use unlock('dlc_9', 'zikz_612h_mastodont')
+use unlock('dlc_10', 'kenworth_963')
+use unlock('dlc_10', 'kenworth_w990')
+use unlock('dlc_10', 'mack_defense_m917')
+use unlock('dlc_11', 'burlak_6x6')
+use unlock('dlc_11', 'neo_falcon_2000')
+use unlock('dlc_12', 'femm_37at')
+use unlock('dlc_12', 'mtb_8106')
+use unlock('dlc_12_5', 'azov_670963n')

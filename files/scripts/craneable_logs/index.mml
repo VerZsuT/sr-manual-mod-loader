@@ -1,0 +1,28 @@
+const models = '_dlc/[1]/classes/models/[2]'
+
+const dlc_3 = models('dlc_3', '[1]')
+const us_09 = models('us_09', '[1]')
+
+const game_data = 'ModelBrand/GameData'
+const crane_pos = '([1]; 0.171; 0)'
+
+preset add_sockets(path, x) {
+  file path {
+    change game_data {
+      change_add CraneSocket at 1 {
+        set Pos = crane_pos(0)
+      }
+      change_add CraneSocket at 2 {
+        set Pos = crane_pos(x)
+      }
+      change_add CraneSocket at 3 {
+        set Pos = crane_pos(-x)
+      }
+    }
+  }
+}
+
+use add_sockets(dlc_3('cargo_unit_log_long'), 4.0)
+use add_sockets(dlc_3('cargo_unit_log_medium'), 2.4)
+use add_sockets(dlc_3('cargo_unit_log_short'), 1.365)
+use add_sockets(us_09('cargo_unit_burnt_log_medium'), 2.4)

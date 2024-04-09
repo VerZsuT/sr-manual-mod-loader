@@ -1,0 +1,38 @@
+Path        : String          // "dir1/dir2/file"
+XPath       : String          // "Element1/Element2[3]"
+Index       : Number          // 1...Infinity
+Tag         : String
+
+Name        : Identifier
+Value       : String | Number | Boolean | Name[<Args>]
+
+DefineArgs  : Identifier[, DefineArgs]
+Args        : Value[, Args]
+
+AttrName    : String
+
+ROOT_BODY : INNER_BODY {
+  file <Path> { FILE_BODY }
+}
+
+INNER_BODY {
+  const <Name> = <Value>
+  preset <Name>(<DefineArgs>) { PRESET_BODY }
+
+  use <Name>(<Args>)
+}
+
+PRESET_BODY : ROOT_BODY, CHANGE_BODY {}
+
+FILE_BODY : INNER_BODY {
+  change [all] <XPath> { CHANGE_BODY }
+  change_add <Tag> [at Index] { CHANGE_BODY }
+}
+
+CHANGE_BODY : FILE_BODY {
+  add <Tag> [at Index] { CHANGE_BODY }
+
+  set <AttrName> = <Value>
+  remove [all] <XPath>
+  remove <AttrName>
+}
